@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Transaction;
 use App\Http\Controllers\WalletController;
+use App\Http\Controllers\CryptocurrencyController;
 
 // Landing Page
 Route::get('/', function () {
@@ -59,6 +60,7 @@ Route::middleware('auth')->group(function () {
     
     // Route transactions tetap sama
     Route::resource('transactions', TransactionController::class);
+    Route::resource('cryptocurrencies', CryptocurrencyController::class);
 });
 
 require __DIR__ . '/auth.php';
