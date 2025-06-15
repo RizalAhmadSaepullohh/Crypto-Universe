@@ -1,0 +1,94 @@
+/*-- Crypto Universe Theme: Purple & Black --*/
+
+:root {
+    --primary-purple: #8A2BE2; /* BlueViolet */
+    --dark-purple: #4B0082; /* Indigo */
+    --light-purple: #9370DB; /* MediumPurple */
+    --dark-bg: #121212;
+    --content-bg: #1e1e1e;
+    --border-color: #333;
+    --text-primary: #ffffff;
+    --text-secondary: #adb5bd;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+}
+
+/* Layouts & Cards */
+.bg-white, .bg-gray-100 {
+    background-color: var(--content-bg) !important;
+}
+.border-gray-200 {
+    border-color: var(--border-color) !important;
+}
+
+/* Text */
+h1, h2, h3, h4, h5, h6, .text-gray-900 {
+    color: var(--text-primary) !important;
+}
+.text-gray-600, .text-gray-500 {
+    color: var(--text-secondary) !important;
+}
+a {
+    color: var(--light-purple);
+}
+a:hover {
+    color: var(--primary-purple);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-purple);
+    border-color: var(--primary-purple);
+    color: white;
+}
+.btn-primary:hover {
+    background-color: var(--dark-purple);
+    border-color: var(--dark-purple);
+}
+.btn-danger {
+    background-color: #dc3545;
+}
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+/* Forms */
+.form-control, input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], select {
+    background-color: #2a2a2a !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(138, 43, 226, 0.25);
+    border-color: var(--primary-purple);
+}
+label, .form-label {
+    color: var(--text-secondary);
+}
+
+/* Tables */
+.table {
+    --bs-table-bg: var(--content-bg);
+    --bs-table-border-color: var(--border-color);
+    --bs-table-striped-bg: #2a2a2a;
+    --bs-table-striped-color: var(--text-primary);
+    --bs-table-hover-bg: #3a3a3a;
+    --bs-table-hover-color: var(--text-primary);
+    color: var(--text-primary);
+}
+.table-dark {
+    --bs-table-bg: #000;
+}
+thead th {
+    color: var(--light-purple);
+}
+
+/* Alerts */
+.alert-success {
+    background-color: #198754;
+    color: white;
+    border: none;
+}
